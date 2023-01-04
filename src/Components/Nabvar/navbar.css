@@ -12,8 +12,13 @@
     padding-bottom: 1rem;
     padding-top: 0rem;
     z-index: 10;
-    background-color: rgb(80, 146, 204);
+    background-color: rgb(112, 172, 225);
     
+}
+.log{
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  
 }
 .logo{
   text-decoration: none;
@@ -23,6 +28,8 @@
 
 .heading{
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 10px;
   color: rgb(255, 255, 255);
  
 }
@@ -32,7 +39,7 @@
     z-index: 10;
     font-size: 20px;
     margin-top: 0rem;
-    margin-left: 1rem;
+   
     align-items: center;
 }
 .link{
@@ -63,7 +70,7 @@ ul{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    font-family: Helvetica, sans-serif,Arial;
+    font-family: 'Montesserat';
     margin-bottom: 1rem;
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import "./navbar.css"
+import { BsFillBookFill } from 'react-icons/bs';
 
 
 
@@ -16,7 +17,7 @@ function Navbar(){
             <div className="link"> 
                   <div className="port"  >
                       <Link to="/" className="logo">
-                      <h2 className="heading">BG.</h2></Link> 
+                      <h2 className="heading"><BsFillBookFill size={35} className="log" /></h2></Link> 
                   
               <ul>
                 <li>
