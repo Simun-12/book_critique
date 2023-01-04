@@ -1,10 +1,10 @@
 .footer {
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 8rem 0rem 5rem 0rem;
     background-color: rgb(182, 218, 242);
     display:grid ;
     grid-auto-flow: column;  
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 8rem;
     border-color: beige;
     box-shadow: 1rem 1rem 2rem 1rem;
 
