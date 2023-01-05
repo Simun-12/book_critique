@@ -1,6 +1,6 @@
 
 .main1{
-    width: 100%;
+    width: 99%;
     height: 2rem;
     display: grid;
     grid-auto-flow: column;
@@ -59,7 +59,7 @@
 ul{
   list-style: none;
   position: absolute;
-  right: 0%;
+  right: 5%;
 }
 .link ul li{
   margin-left: 80px;
@@ -92,10 +92,15 @@ ul{
   margin-bottom: 1rem;
 }
 
-@media screen {
-  .hamburger{
-    display:none ;
-  }
+.hamburger{
+  right: 6%;
+  size: 30px;
+  color: aqua;
+  z-index: 12;
+}
+.menu{
+  display: flex;
+  margin-right: 500px;
 }
 
 
@@ -107,28 +112,26 @@ ul{
     height: 1rem;
   }
 
-  .link{
+   .navigation{
+    display: none;
+  }
+  .navigation1{
     display: none;
   }
  
-  
-  
-  .heading{
-    margin-top: 20px;
-    font-size: 30px;
-    transition: 0.5s;
-    padding-left: 1rem;
-    padding-bottom: 5rem;
+  .log{
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    
+  }
+  .log1{
+    color: rgb(112, 172, 225);
+    padding-left: 10px;
   }
   
   .hamburger{
-    margin-top: 20px;
-    display: fixed;
-    position: absolute;
-    right: 5%;
-   height: 30px;
-   width: 30px;
-    color: wheat;
+    size: 30px;
+  color: aqua;
   
   }
 }
