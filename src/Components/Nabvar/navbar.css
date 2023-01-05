@@ -14,7 +14,7 @@
     
 }
 .main2{
-     width: 100%;
+     width: 99%;
     height: 2rem;
     display: grid;
     grid-auto-flow: column;
