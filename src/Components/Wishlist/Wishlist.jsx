@@ -1,7 +1,7 @@
-import react from 'React';
+import React from 'react';
 import {BsFillBookmarkHeartFill,BsFillBookmarkXFill} from 'react-icons/bs'
-import { useAppContext } from "../context/appcontext";
-import './Wishlist.css';
+import { useAppContext } from "../Context/appcontext";
+import '../Wishlist/Wishlist.css';
 
 const Wishlist = () => {
 

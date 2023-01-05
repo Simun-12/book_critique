@@ -1,15 +1,19 @@
-import {useAppContext  } from "../Context/appcontext";
 import React from "react";
 import './SearchPage.css';
 import {BsFillBookmarkHeartFill,BsFillBookmarkXFill} from 'react-icons/bs';
-
 import '../Characteristics/characteristics.css';
+import {useAppContext  } from "../Context/appcontext";
+import Modal from "../modals/Modal";
+import { useState } from "react";
 
 
 
 
 
 const SearchCard = ({ book }) => {
+     
+    const [show,setShow]=useState(false);
+    const [bookItem,setItem]=useState();
      
 
     const {favourites,addToFavourites,removeFromFavourites} = useAppContext();
@@ -33,7 +37,7 @@ const SearchCard = ({ book }) => {
                             <>
                              <div className="card1" >
                
-               <img src={thumbnail} alt="img" id="card" className="card1-image"/>
+               <img src={thumbnail} alt="img" id="card" className="card1-image" onClick={()=>{setShow(true);setItem(item)}} />
                <div className="card-content">
                    <div className="" > <h3 className="tit">{item.volumeInfo.title}</h3></div>
                    <div className="desc"> <p>&#8377;{amount}  </p></div>
@@ -53,7 +57,7 @@ const SearchCard = ({ book }) => {
                    </div>
            </div>
            </div>
-                           
+           <Modal show={show} item={bookItem} onClose={()=>setShow(false)}/>   
                              
                             </>
                         )
